@@ -1,4 +1,4 @@
-﻿//NOT_MIT_KAN v.1
+//NOT_MIT_KAN v.1
 //Concept: Andrew Polar and Mike Poluektov
 //Developer Andrew Polar
 
@@ -38,7 +38,7 @@ namespace NOT_MIT_KAN_1
             (List<double[]> input, List<double> target) = f1.GenerateData(1000);
 
             DateTime start = DateTime.Now;
-            KolmogorovModelPL kmpl = new KolmogorovModelPL(input, target, 6, 8, 5, 0.2, 0.1);
+            KolmogorovModelPL kmpl = new KolmogorovModelPL(input, target, 6, 8, 5, 0.1, 0.1);
             kmpl.BuildRepresentation(1000);
             DateTime end = DateTime.Now;
             TimeSpan duration = end - start;
@@ -66,7 +66,7 @@ namespace NOT_MIT_KAN_1
             //(List<double[]> input, List<double> target) = f2.GenerateData(3000);
 
             //DateTime start = DateTime.Now;
-            //KolmogorovModelPL kmpl = new KolmogorovModelPL(input, target, 8, 8, 9, 0.07, 0.07);
+            //KolmogorovModelPL kmpl = new KolmogorovModelPL(input, target, 8, 8, 9, 0.1, 0.1);
             //kmpl.BuildRepresentation(1000);
             //DateTime end = DateTime.Now;
             //TimeSpan duration = end - start;
@@ -91,7 +91,7 @@ namespace NOT_MIT_KAN_1
             //(List<double[]> inputs, List<double> target) = f3.GenerateData(10000);
 
             //DateTime start = DateTime.Now;
-            //KolmogorovModelPL kmpl = new KolmogorovModelPL(inputs, target, 5, 12, 11, 0.05, 0.05);
+            //KolmogorovModelPL kmpl = new KolmogorovModelPL(inputs, target, 5, 12, 11, 0.1, 0.2);
             //kmpl.BuildRepresentation(1000);
             //DateTime end = DateTime.Now;
             //TimeSpan duration = end - start;
@@ -116,7 +116,7 @@ namespace NOT_MIT_KAN_1
             //(List<double[]> inputs, List<double> target) = f4.GenerateData(10000);
 
             //DateTime start = DateTime.Now;
-            //KolmogorovModelPL kmpl = new KolmogorovModelPL(inputs, target, 5, 5, 24, 0.01, 0.01);
+            //KolmogorovModelPL kmpl = new KolmogorovModelPL(inputs, target, 5, 5, 24, 0.1, 0.2);
             //kmpl.BuildRepresentation(500);
             //DateTime end = DateTime.Now;
             //TimeSpan duration = end - start;
