@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,9 +15,9 @@ namespace NOT_MIT_KAN_1
         int[] _interior_structure = null;
         int[] _exterior_structure = null;
 
-        private double _muOuter = 0.2;
-        private double _muInner = 0.1;
-        private int _nBranches = 5;
+        private double _muOuter;
+        private double _muInner;
+        private int _nBranches;
 
         private List<UrysohnPL> _ulist = new List<UrysohnPL>();
         private UrysohnPL _bigU = null;
@@ -28,6 +28,8 @@ namespace NOT_MIT_KAN_1
             _inputs = inputs;
             _target = target;
 
+            _muOuter = muOuter;
+            _muInner = muInner;
             _nBranches = branches;
 
             if (inputs.Count != target.Count)
